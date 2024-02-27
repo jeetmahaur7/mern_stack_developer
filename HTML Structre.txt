@@ -3,10 +3,10 @@
         Page Title Tag
         Fav Icon Tag
         SEO Tag(Meta Tag)
-        CDN Links
+        CDN Links(Content Delivery Network)
         External CSS Links
         Internal CSS
-        Third Party CSS Links etc
+        Third-party CSS Links etc
     </head>
 
            <body>
