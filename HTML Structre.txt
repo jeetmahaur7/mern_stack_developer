@@ -1,0 +1,23 @@
+<html>
+    <head>
+        Page Title Tag
+        Fav Icon Tag
+        SEO Tag(Meta Tag)
+        CDN Links
+        External CSS Links
+        Internal CSS
+        Third Party CSS Links etc
+    </head>
+
+           <body>
+                Heading Tags
+                Paragraph Tags
+                List Tags
+                Form Tags
+                Table Tags
+                Image Tags etc.
+
+                External JS Links
+                Internal JS Links
+           </body>
+</html>           
