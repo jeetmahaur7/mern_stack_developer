@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox CSS</title>
+    <style>
+        /* * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgrey;
+            display: flex;
+            flex-direction: row;
+            flex-direction: column;            
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; 
+            justify-content: space-around;
+            justify-content: space-evenly;
+           justify-content: space-between;
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+            color: rgb(7, 7, 7);
+            place-items: center;
+        }
+
+        #box1 {
+            background-color: antiquewhite;
+        }
+
+        #box2 {
+            background-color: rgb(243, 155, 40);
+        }
+
+        #box3 {
+            background-color: rgb(54, 31, 231);
+        }
+
+        #box4 {
+            background-color: rgb(223, 26, 26);
+        }
+
+        #box5 {
+            background-color: rgb(117, 246, 19);
+        }
+
+        #box6 {
+            background-color: rgb(251, 108, 108);
+        } */
+
+
+        * {
+            margin: 0;
+        }
+
+        .service {
+            width: 100vw;
+            height: 100vw;
+        }
+
+        .items {
+            width: 100vw;
+            height: 33%;
+            display: flex;
+            margin-bottom: 15px;
+            background-color: lightgray;
+        }
+
+        .first,
+        .second {
+            width: 48%;
+            height: 100%;
+        }
+
+        .first img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .second {
+            padding: 10px;
+        }
+
+        .second h1 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .second p {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+    </div> -->
+
+    <div class="service">
+        <div class="items">
+            <div class="first">
+                <img src="../../../Wallpaper/Akshara Singh (1).jpg" alt="Akshara Singh">
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, libero.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident iste, eum ea quos inventore
+                    quisquam rerum explicabo commodi nulla beatae delectus, iure illum, at ad fuga ab totam consequuntur
+                    odit!</p>
+            </div>
+        </div>
+        <div class="items reverse">
+            <div class="first">
+                <img src="../../../Wallpaper/Akshara Singh (2).jpg" alt="Akshara Singh">
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, libero.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident iste, eum ea quos inventore
+                    quisquam rerum explicabo commodi nulla beatae delectus, iure illum, at ad fuga ab totam consequuntur
+                    odit!</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="first">
+                <img src="../../../Wallpaper/Akshara Singh (3).jpg" alt="Akshara Singh">
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, libero.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident iste, eum ea quos inventore
+                    quisquam rerum explicabo commodi nulla beatae delectus, iure illum, at ad fuga ab totam consequuntur
+                    odit!</p>
+            </div>
+        </div>
+        <div class="items reverse">
+            <div class="first">
+                <img src="../../../Wallpaper/Akshara Singh (4).jpg" alt="Akshara Singh">
+            </div>
+            <div class="second">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, libero.</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident iste, eum ea quos inventore
+                    quisquam rerum explicabo commodi nulla beatae delectus, iure illum, at ad fuga ab totam consequuntur
+                    odit!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
