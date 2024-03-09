@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid CSS</title>
+    <style>
+        /* * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 100px 200px;
+            column-gap: 1px;
+            row-gap: 1px;
+        gap: 1px;
+        }
+
+        .box {
+            background-color: navy;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+
+        #box1,
+        #box14 {
+            grid-column: 1/4 span;
+        }
+
+        #box2,
+        #box3,
+        #box7,
+        #box8 {
+            grid-column: 1/2 span;
+        }
+
+        #box3,
+        #box8 {
+            grid-column-start: 3;
+        }
+
+        #box4 {
+            grid-column: 1/2 span;
+            grid-row-start: 3;
+        }
+
+        #box9 {
+            grid-row: 1/2 span;
+            grid-row-start: 5;
+        }
+
+        #box13 {
+            grid-column: 1/3 span;
+            grid-column-start: 2;
+        } */
+
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+        }
+
+        .box {
+            background-color: navy;
+            color: white;
+            display: grid;
+            place-items: center;
+        }
+
+        #box1,
+        #box14 {
+            grid-column: 1/6 span;
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1080px) {
+            .main {
+                height: 150vh;
+                grid-template-columns: auto auto auto auto;
+            }
+
+            .box {
+                background-color: greenyellow;
+            }
+
+            #box1,
+            #box14 {
+                grid-column: 1/4 span;
+            }
+        }
+
+        @media only screen and (min-width:480px) and (max-width:768px) {
+            .main {
+                height: 200vh;
+                grid-template-columns: auto auto auto;
+            }
+
+            .box {
+                background-color: black;
+            }
+
+            #box1,
+            #box14 {
+                grid-column: 1/3 span;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+        <div class="box" id="box9">9</div>
+        <div class="box" id="box10">10</div>
+        <div class="box" id="box11">11</div>
+        <div class="box" id="box12">12</div>
+        <div class="box" id="box13">13</div>
+        <div class="box" id="box14">14</div>
+    </div>
+</body>
+
+</html>
