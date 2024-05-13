@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Keyboard Event</title>
+
+    <style>
+        /* * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .center {
+            width: 80%;
+            margin: auto;
+        }
+
+        .center h3 {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .center input {
+            width: 99.2%;
+            padding: 10px 0;
+            margin-bottom: 5px;
+        }
+
+        .center button {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+        }
+
+        #text {
+            text-transform: capitalize;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="center">
+            <h3>Keyboard Events Example</h3>
+            <h3 id="hname">Name : </h3>
+            <h3 id="hemail">Email : </h3>
+            <h3 id="hphone">Phone : </h3>
+            <h3 id="hdsg">Designation : </h3>
+            <h3 id="hsalary">Salary : </h3>
+            <h3 id="hcity">City : </h3>
+            <h3 id="hstate">State : </h3>
+            <input type="text" name="name" id="name" placeholder="Full Name" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <input type="email" name="email" id="email" placeholder="Email Address" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <input type="text" name="phone" id="phone" placeholder="Phone Number" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <input type="text" name="dsg" id="dsg" placeholder="Designation" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <input type="text" name="salary" id="salary" placeholder="Salary" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <input type="text" name="city" id="city" placeholder="City Name" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <input type="text" name="state" id="state" placeholder="State Name" onkeydown="fun1(event)"
+                onkeypress="fun2(event)" onkeyup="fun3(event)">
+            <button onclick="postData()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        function fun1(event) {
+            // console.log(event.target.name,event.target.id,event.target.value)
+            var element = document.getElementById(event.target.id)
+            element.style.backgroundColor = "lightgray"
+            element.style.color = "navy"
+            console.log("ON Key Down Event Is Called")
+        }
+        function fun2(event) {
+            var element = document.getElementById(event.target.id)
+            element.style.backgroundColor = "gray"
+            element.style.color = "white"
+            console.log("ON Key Press Event Is Called")
+        }
+        function fun3(event) {
+            let { id, value } = event.target
+            var heading = document.getElementById(`h${id}`)
+            heading.innerHTML = `<span id='text'>${id}</span> : ${value}`
+        }
+
+        function postData() {
+            alert(`
+                Name         :   ${document.getElementById("name").value}
+                Email        :   ${document.getElementById("email").value}
+                Phone        :   ${document.getElementById("phone").value}
+                Designation  :   ${document.getElementById("dsg").value}
+                Salary       :   ${document.getElementById("salary").value}
+                City         :   ${document.getElementById("city").value}
+                State        :   ${document.getElementById("state").value}
+            `
+            )
+        }
+    </script> -->
+
+    <div class="main">
+        <div class="center">
+            <h3>Keyboard Events Example</h3>
+            <h3 id="hname">Name: </h3>
+            <h3 id="hemail">Email: </h3>
+            <h3 id="hphone">Phone: </h3>
+            <h3 id="hcity">City: </h3>
+
+            <input type="text" name="name" id="name" placeholder="Full Name" 
+            onkeydown="fun1(event)"
+            onkeypress="fun2(event)"
+            onkeyup="fun3(event)">
+
+            <input type="email" name="email" id="email" placeholder="Email Address" 
+            onkeydown="fun1(event)"
+            onkeypress="fun2(event)"
+            onkeyup="fun3(event)">
+
+            <input type="phone" name="phone" id="phone" placeholder="Phone Number" 
+            onkeydown="fun1(event)"
+            onkeypress="fun2(event)"
+            onkeyup="fun3(event)">
+        </div>
+    </div>
+</body>
+
+</html>
