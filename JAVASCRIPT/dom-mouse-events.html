@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Mouse Events</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 70vw;
+            height: 70vh;
+            background-color: rgb(197, 203, 203);
+            color: navy;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main" onmouseover="fun1()" onmouseenter="fun2()" onmousedown="fun3()" onmouseup="fun4()"
+        onclick="fun5()" ondblclick="fun6()" onmousemove="fun7()" onmousewheel="fun8()" onmouseout="fun9()"
+        onmouseleave="fun10()">
+        No Events</div>
+
+    <script>
+        var main = document.querySelector(".main")
+
+        function fun1() {
+            main.innerHTML = "On Mouse Over Event"
+            main.style.backgroundColor = "orange"
+            main.style.color = "white"
+            console.log("On Mouse Over Event is called")
+        }
+
+        function fun2() {
+            main.innerHTML = "On Mouse Enter Event"
+            main.style.backgroundColor = "red"
+            main.style.color = "white"
+            console.log("On Mouse Enter Event is called")
+        }
+
+        function fun3() {
+            main.innerHTML = "On Mouse Down Event"
+            main.style.backgroundColor = "green"
+            main.style.color = "white"
+            console.log("On Mouse Down Event is called")
+        }
+
+        function fun4() {
+            main.innerHTML = "On Mouse Up Event"
+            main.style.backgroundColor = "yellow"
+            main.style.color = "navy"
+            console.log("On Mouse Up Event is called")
+        }
+
+        function fun5() {
+            main.innerHTML = "On Mouse Click Event"
+            main.style.backgroundColor = "navy"
+            main.style.color = "white"
+            console.log("On Mouse Click Event is called")
+        }
+
+        function fun6() {
+            main.innerHTML = "On Mouse Double Click Event"
+            main.style.backgroundColor = "blue"
+            main.style.color = "white"
+            console.log("On Mouse Double Click Event is called")
+        }
+
+        function fun7() {
+            main.innerHTML = "On Mouse Move Event"
+            main.style.backgroundColor = "black"
+            main.style.color = "white"
+            console.log("On Mouse Move Event is called")
+        }
+
+        function fun8() {
+            main.innerHTML = "On Mouse Wheel Event"
+            main.style.backgroundColor = "magenta"
+            main.style.color = "white"
+            console.log("On Mouse Wheel Event is called")
+        }
+
+        function fun9() {
+            main.innerHTML = "On Mouse Out Event"
+            main.style.backgroundColor = "purple"
+            main.style.color = "white"
+            console.log("On Mouse Out Event is called")
+        }
+
+        function fun10() {
+            main.innerHTML = "On Mouse Leave Event"
+            main.style.backgroundColor = "gray"
+            main.style.color = "white"
+            console.log("On Mouse Leaveo Event is called")
+        }
+
+    </script>
+</body>
+
+</html>
