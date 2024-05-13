@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Changing HTML Elements</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .center {
+            width: 80%;
+            height: 50%;
+        }
+
+        .center button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .center p {
+            background-color: blue;
+            color: white;
+            text-align: justify;
+            font-size: 22px;
+            padding: 20px;
+        } */
+
+        /* * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .center {
+            width: 80%;
+            height: 50%;
+        }
+
+        .center button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            margin-bottom: 10px;
+        }
+
+        .center p {
+            background-color: black;
+            color: white;
+            text-align: justify;
+            font-size: 20px;
+            padding: 20px;
+        } */
+
+        * {
+            margin: 0;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+
+        .center {
+            width: 80%;
+            height: 50%;
+        }
+
+        .center button {
+            background-color: black;
+            color: white;
+            width: 100%;
+            font-size: 25px;
+            padding: 10px;
+            border: none;
+            margin-bottom: 10px;
+
+        }
+
+        .center p {
+            background-color: white;
+            color: black;
+            text-align: justify;
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        <div class="center">
+            <button id="btn" onclick="fun()">Change</button>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero voluptatum quas, dolores
+                repudiandae quod facere et ipsam est sequi quisquam tempora nulla delectus eius excepturi velit totam
+                non fugit obcaecati beatae voluptate quibusdam dolor voluptas! Dolorem nam tempora facere quam animi in!
+                A, culpa nemo! Nihil in aliquid, dolores est consequuntur reiciendis vero, at blanditiis magnam quaerat
+                distinctio ipsa. Iste, facere. Nesciunt animi molestiae totam vero exercitationem atque quod modi
+                deleniti id quidem asperiores mollitia a non, minima incidunt reiciendis, consequuntur voluptate harum
+                soluta quas possimus. Obcaecati quia harum laborum alias doloremque, necessitatibus unde amet beatae
+                voluptate hic tempore!</p>
+        </div>
+    </div> -->
+
+    <!-- <div class="main">
+        <div class="center">
+            <button id="btn" onclick="fun()">Change</button>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illo tenetur debitis aut. Error
+                distinctio nemo dignissimos itaque, temporibus dolorum, aliquid atque ad neque nostrum delectus dolores
+                quasi, minus veniam? Officiis ex porro debitis eius, saepe fuga dolorum harum reiciendis totam id.
+                Reprehenderit in deserunt cum soluta nesciunt laudantium ut.</p>
+        </div>
+    </div> -->
+
+
+    <div class="main">
+        <div class="center">
+            <button id="btn" onclick="fun()">Change</button>
+            <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia dolor architecto, et omnis
+                quidem reprehenderit ex. Necessitatibus similique accusantium error explicabo corporis quo repellat
+                eligendi, ea magnam facilis asperiores consequatur, facere, cumque ut sint. Delectus expedita magnam ex
+                quia vero sequi magni, eveniet est alias id officiis labore repellat saepe odio quos, hic facere porro
+                enim unde voluptates aliquam at! Officiis accusamus modi, voluptas rerum hic veniam et reprehenderit est
+                dicta quo voluptatibus architecto. Rerum at quod dolorem quos dolorum accusantium minima distinctio
+                facere explicabo cum! Enim vitae incidunt amet iste perferendis mollitia. Explicabo minima ipsum nobis
+                incidunt voluptatum ipsa!</p>
+        </div>
+    </div>
+
+    <script>
+        // var text1 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, vero repudiandae. Laudantium ullam voluptate possimus fugit aut aspernatur a sed quasi in inventore vero porro harum quas labore molestias nobis, architecto accusamus veritatis placeat quae asperiores quaerat! Blanditiis iste praesentium et quidem debitis eligendi officia, molestias magnam sed cupiditate consequuntur quisquam ad aut adipisci. Eveniet distinctio doloribus maxime nobis libero rem vitae ducimus ex quam vel tempora, a dolores! Aspernatur accusamus aut assumenda, ipsa non voluptas architecto tempora minus doloribus dicta dignissimos nobis ullam deserunt. Minima dolore, sed odit fugit a ducimus eaque sapiente rerum dolores. "
+
+        // var text2 = "Earum pariatur itaque quasi veniam voluptatum, quos atque iusto culpa assumenda! Error exercitationem ab assumenda aliquam laborum architecto incidunt placeat velit, illo corrupti ipsa ipsum veniam mollitia earum fugiat fuga doloribus cupiditate doloremque modi, impedit ratione, magnam reprehenderit nulla. Quos ratione dolorum vero cumque omnis amet. Voluptate officia corrupti beatae? Maiores, ratione unde dolor id nisi ad, sint ipsa aliquid deserunt hic alias ut! Sunt excepturi voluptate rem eveniet neque sequi nesciunt quas? Laborum vero cupiditate itaque eos earum modi cum expedita nam quae quia labore, aspernatur veniam eaque natus suscipit tempore. Ab error accusantium illum explicabo atque doloremque, nihil sed corporis earum repellendus."
+
+        // var btn = document.getElementById("btn")
+        // var para = document.getElementById("para")
+
+        // function fun() {
+        //     if (btn.innerHTML == "change") {
+        //         para.innerHTML = text2
+        //         btn.innerHTML = "Reset"
+        //     }
+        //     else {
+        //         para.innerHTML = text1
+        //         btn.innerHTML = "change"
+        //     }
+        // }
+
+
+        // var text1 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, vero repudiandae. Laudantium ullam voluptate possimus fugit aut aspernatur a sed quasi in inventore vero porro harum quas labore molestias nobis, architecto accusamus veritatis placeat quae asperiores quaerat! Blanditiis iste praesentium et quidem debitis eligendi officia, molestias magnam sed cupiditate consequuntur quisquam ad aut adipisci. Eveniet distinctio doloribus maxime nobis libero rem vitae ducimus ex quam vel tempora, a dolores! Aspernatur accusamus aut assumenda, ipsa non voluptas architecto tempora minus doloribus dicta dignissimos nobis ullam deserunt. Minima dolore, sed odit fugit a ducimus eaque sapiente rerum dolores. "
+
+
+        // var text2 = "Earum pariatur itaque quasi veniam voluptatum, quos atque iusto culpa assumenda! Error exercitationem ab assumenda aliquam laborum architecto incidunt placeat velit, illo corrupti ipsa ipsum veniam mollitia earum fugiat fuga doloribus cupiditate doloremque modi, impedit ratione, magnam reprehenderit nulla. Quos ratione dolorum vero cumque omnis amet. Voluptate officia corrupti beatae? Maiores, ratione unde dolor id nisi ad, sint ipsa aliquid deserunt hic alias ut! Sunt excepturi voluptate rem eveniet neque sequi nesciunt quas? Laborum vero cupiditate itaque eos earum modi cum expedita nam quae quia labore, aspernatur veniam eaque natus suscipit tempore. Ab error accusantium illum explicabo atque doloremque, nihil sed corporis earum repellendus."
+
+
+        // var btn = document.getElementById("btn")
+        // var para = document.getElementById("para")
+
+        // function fun() {
+        //     if (btn.innerHTML == "Change") {
+        //         para.innerHTML = text2
+        //         btn.innerHTML = "Reset"
+        //     }
+        //     else {
+        //         para.innerHTML = text1
+        //         btn.innerHTML = "Change"
+        //     }
+        // }
+
+        var text1 = `Hello Change the parapraph`
+        var text2 = `Hello Reset the paragraph`
+
+
+        var btn = document.getElementById("btn")
+        var para = document.getElementById("para")
+
+        function fun() {
+            if (btn.innerHTML == 'Change') {
+                para.innerHTML = text2
+                btn.innerHTML = "Reset"
+            }
+            else {
+                para.innerHTML = text1
+                btn.innerHTML = "Change"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
