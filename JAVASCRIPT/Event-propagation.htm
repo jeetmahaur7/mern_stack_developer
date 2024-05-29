@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: navy;
+        }
+        .first,.second,.third,.fourth{
+            width: 80%;
+            height: 80%;
+            display: grid;
+            place-items: center;
+            background-color: green;
+        }
+        .second{
+
+            background-color: purple;
+        }
+        .third{
+
+            background-color: orangered;
+        }
+        .fourth{
+
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="second">
+                <div class="third">
+                    <div class="fourth">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var main = document.querySelector(".main")
+        var first = document.querySelector(".first")
+        var second = document.querySelector(".second")
+        var third = document.querySelector(".third")
+        var fourth = document.querySelector(".fourth")
+
+        main.addEventListener("click",()=>alert("main div Event is called"),true)
+        first.addEventListener("click",()=>alert("first div Event is called"),true)
+        second.addEventListener("click",()=>alert("second div Event is called"),true)
+        third.addEventListener("click",()=>alert("third div Event is called"),true)
+        fourth.addEventListener("click",()=>alert("fourth div Event is called"),true)
+    </script>
+</body>
+</html>
