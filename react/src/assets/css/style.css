@@ -1,0 +1,12 @@
+h3,
+p {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.test {
+    background-color: green;
+    text-align: justify;
+}

@@ -1,0 +1,23 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.center{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.items{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.items img{
+    width: 33%;
+    height: 100%;
+}
+.test {
+    background-color: orangered;
+    text-align: justify;
+}
