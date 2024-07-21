@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1001,
+        "name": "Nitin Chauhan",
+        "dsg": "Trainer",
+        "salary": 135800,
+        "city": "Noida",
+        "state": "UP"
+    },
+    {
+        "id": 1002,
+        "name": "Deepak Singh",
+        "dsg": "Trainer",
+        "salary": 135800,
+        "city": "Noida",
+        "state": "UP"
+    },
+    {
+        "id": 1003,
+        "name": "Deepak Gupta",
+        "dsg": "Trainer",
+        "salary": 135800,
+        "city": "Noida",
+        "state": "UP"
+    },
+    {
+        "id": 1004,
+        "name": "Satyam Dixit",
+        "dsg": "Trainer",
+        "salary": 135800,
+        "city": "Noida",
+        "state": "UP"
+    },
+    {
+        "id": 1005,
+        "name": "Mamta Jain",
+        "dsg": "Trainer",
+        "salary": 135800,
+        "city": "Noida",
+        "state": "UP"
+    }
+]
