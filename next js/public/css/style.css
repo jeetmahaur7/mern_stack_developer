@@ -1,0 +1,16 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.center {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+/* h1 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+} */
